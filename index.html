@@ -9,113 +9,126 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #ffd1dc, #ffe4e1);
-      color: #333;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #f0f0f0;
       text-align: center;
     }
     .container {
-      max-width: 600px;
+      max-width: 700px;
       margin: 50px auto;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.1);
       padding: 20px;
       border-radius: 20px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
     }
     .header {
-      background: #ff6f91;
+      background: linear-gradient(135deg, #ff4b6e, #ff6f91);
       padding: 15px;
       border-radius: 15px 15px 0 0;
       color: white;
-      font-size: 24px;
+      font-size: 28px;
       font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
     .product-info {
       padding: 20px;
-      background: #ffe4e1;
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
     .product-info img {
       max-width: 100%;
       border-radius: 10px;
       margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     .product-info p {
       font-size: 16px;
-      color: #555;
       margin: 5px 0;
     }
     .mod-description {
       text-align: left;
       margin-top: 20px;
-      font-size: 14px;
-      color: #444;
+      font-size: 15px;
+      color: #f0f0f0;
       line-height: 1.6;
     }
+    .mod-description ul {
+      list-style: none;
+      padding: 0;
+    }
+    .mod-description ul li {
+      margin: 8px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    .mod-description ul li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+    }
     .qr-section {
-      margin: 20px 0;
+      margin: 30px 0;
     }
     .qr-section img {
-      width: 180px;
-      height: 180px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      height: 200px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
     .qr-section p {
-      font-size: 14px;
-      margin-top: 10px;
-      color: #555;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .button-group {
+      margin: 30px 0;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      margin: 10px 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      color: white;
+      text-align: center;
     }
     .upi-button {
-      display: inline-block;
-      margin-top: 30px;
-      background: #ff6f91;
-      color: white;
-      padding: 12px 25px;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background 0.3s ease;
+      background: linear-gradient(135deg, #ff4b6e, #ff6f91);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
     .upi-button:hover {
-      background: #ff4b6e;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 25px;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 12px;
-      margin-top: 30px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease-in-out;
-    }
-    .whatsapp-button:hover {
-      background-color: #128C7E;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(135deg, #ff6f91, #ff4b6e);
       transform: scale(1.05);
     }
-    .whatsapp-button:active {
-      transform: scale(1);
+    .whatsapp-button {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
-    .whatsapp-button i {
-      margin-right: 10px;
+    .whatsapp-button:hover {
+      background: linear-gradient(135deg, #128C7E, #25D366);
+      transform: scale(1.05);
+    }
+    .instagram-links {
+      margin-top: 20px;
+    }
+    .instagram-button {
+      background: linear-gradient(135deg, #C13584, #E1306C);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .instagram-button:hover {
+      background: linear-gradient(135deg, #E1306C, #C13584);
+      transform: scale(1.05);
     }
     footer {
       margin-top: 30px;
       font-size: 14px;
-      color: #777;
-    }
-    .emoji {
-      font-size: 20px;
+      color: #f0f0f0;
     }
   </style>
 </head>
@@ -129,18 +142,16 @@
       <p><strong>Product:</strong> KSRTC Eicher BS-III Mod for BUSSID</p>
       <p><strong>Price:</strong> ₹40</p>
       <p><strong>Variant:</strong> Factory Fresh (KSRTC)</p>
-      <p><strong>Included:</strong> Full bus model, compatible with BUSSID</p>
     </div>
 
     <!-- Mod Description -->
     <div class="mod-description">
       <h3>Description:</h3>
-      <p>This mod features a highly detailed model of the KSRTC Eicher BS-III bus for BUSSID, including realistic textures, custom features, and more. Perfect for enthusiasts of the Karnataka State Road Transport Corporation!</p>
-      <p><strong>Features:</strong></p>
+      <p>This mod features a highly detailed model of the KSRTC Eicher BS-III bus for BUSSID, including realistic textures, custom features, and more.</p>
       <ul>
-        <li>Realistic bus model with accurate textures 🚍</li>
-        <li>Fully compatible with BUSSID 🎮</li>
-        <li>Customizable for KSRTC and other variants 🚌</li>
+        <li>Realistic bus model with accurate textures</li>
+        <li>Fully compatible with BUSSID</li>
+        <li>Customizable for KSRTC variants</li>
       </ul>
     </div>
 
@@ -150,24 +161,32 @@
       <p>Scan the QR code to pay ₹40 💸</p>
     </div>
 
-    <!-- UPI Button -->
-    <button class="upi-button" onclick="payUsingUPI()">Pay Using UPI App 💳</button>
+    <!-- Payment Buttons -->
+    <div class="button-group">
+      <a href="upi://pay?pa=rohan.21@superyes&pn=KSRTC+Eicher+BS-III+Mod&am=40&cu=INR" class="button upi-button">
+        Pay Using UPI App 💳
+      </a>
+      <a href="https://wa.me/917621000916?text=I+have+paid+₹40+for+KSRTC+Eicher+BS-III+Mod+and+here%27s+my+screenshot.%0A%0A[Insert+Screenshot+Here] 🎉" 
+         class="button whatsapp-button">
+        Confirm on WhatsApp 📲
+      </a>
+    </div>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/917621000916?text=I+have+paid+₹40+for+KSRTC+Eicher+BS-III+Mod+and+here%27s+my+screenshot.%0A%0A[Insert+Screenshot+Here] 🎉" 
-       class="whatsapp-button">
-      <i class="emoji">📲</i>Send Payment Confirmation on WhatsApp
-    </a>
-    <footer>Made with TechForGamers Solutions</footer>
+    <!-- Instagram Links -->
+    <div class="instagram-links">
+      <h3>Follow us on Instagram:</h3>
+      <a href="https://www.instagram.com/roadhost_yt/profilecard/?igsh=eDViN3hjemN2Nzg3" class="button instagram-button">
+        RoadHost
+      </a>
+      <a href="https://www.instagram.com/indian_bus_clicks/profilecard/?igsh=ZWFtN29nczhteG5m" class="button instagram-button">
+        Indian Bus Clicks
+      </a>
+      <a href="https://www.instagram.com/karunadu_mod_developers/profilecard/?igsh=MWdkcGp3Znc1dmdwMw==" class="button instagram-button">
+        Karunadu Mod Developers
+      </a>
+    </div>
+
+    <footer>Made with ❤️ by TechForGamers Solutions</footer>
   </div>
-
-  
-
-  <script>
-    function payUsingUPI() {
-      const upiURL = "upi://pay?pa=rohan.21@superyes&pn=KSRTC+Eicher+BS-III+Mod&am=40&cu=INR";
-      window.location.href = upiURL;
-    }
-  </script>
 </body>
 </html>
